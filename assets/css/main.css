@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #222222; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #172a28; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #008374; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #86a920; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -53,7 +53,7 @@
 }
 
 .accent-background {
-  --background-color: #008374;
+  --background-color: #86a920;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --accent-color: #ffffff;
@@ -239,7 +239,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #008374;
+  --background-color: #86a920;
   --heading-color: #ffffff;
   color: var(--default-color);
   transition: all 0.5s;
@@ -841,6 +841,7 @@ h6 {
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
+
 section,
 .section {
   color: var(--default-color);
@@ -896,10 +897,17 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero {
-  width: 100%;
-  position: relative;
-  padding: 140px 0 0 0;
+.hero{
+height: 100vh;
+background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../img/backgroud.png');
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: #f2f9f9;
+padding: 2rem;
 }
 
 .hero .container {
@@ -974,7 +982,6 @@ section,
 }
 
 .hero .icon-boxes {
-  padding-bottom: 60px;
   z-index: 4;
 }
 
