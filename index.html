@@ -4,20 +4,19 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Sauco</title>
+  <title>El Sauco Comedores y Hospedaje</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
-  <!-- Favicons -->
   <link href="assets/img/logo sauco/icon.png" rel="icon">
   <link href="assets/img/logo sauco/LOGO 05.25.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -25,274 +24,92 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-  </head>
+</head>
 
 <body class="index-page">
-
+  <!-- header -->
   <header id="header" class="header fixed-top">
+    <!-- top  -->
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
 
-    <div class="branding d-flex align-items-cente">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a
+              href="mailto:contact@example.com">contact@example.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-cente">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+    <!-- top -->
 
+    <div class="branding d-flex align-items-center">
       <div class="container position-relative d-flex align-items-center justify-content-between">
+        <!-- logo principal de la empresa -->
         <a href="index.html" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/logoSauco.svg" alt="">
+          <img src="assets/img/logoSauco.svg" alt="logo sauco">
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
             <!-- <li><a href="#hero" class="active">Inicio<br></a></li> -->
-            <li><a href="#about">Sobre Nosotros</a></li>
-            <li><a href="#testimonials">Historia</a></li>
-            <li><a href="#clients">Clientes</a></li>
-            <li><a href="#call-to-action">Trabaja </a></li>
-            <li><a href="#services">Servicios</a></li>
-            <li><a href="#team">Equipo</a></li>
+            <li class="dropdown"><a href=""><span>Acerca de Nosotros</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="nosotros.html">Quienes Somos <i class="bi bi-leaf-fill"></i></a></li>
+                <li><a href="historia.html">Nuesta historia <i class="bi bi-leaf-fill"></i></a></li>
+                <li><a href="suministros.html">Cadena de Suministros <i class="bi bi-leaf-fill"></i></a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Servicios</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="">Alimentación <i class="bi bi-leaf-fill"></i></a></li>
+                <li><a href="">Hoteleria <i class="bi bi-leaf-fill"></i></a></li>
+                <li><a href="">Lavanderia industria <i class="bi bi-leaf-fill"></i></a></li>
+                <li><a href="">Recreación y Bienestar <i class="bi bi-leaf-fill"></i></a></li>
+                <li><a href="">Mantenimiento <i class="bi bi-leaf-fill"></i></a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Proyectos</a></li>
             <li><a href="#recent-posts">Blog</a></li>
-            <li><a href="#contact">Contacto</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-
       </div>
-
     </div>
-
   </header>
+  <!-- end header -->
 
   <main class="main">
 
     <!-- Hero Section -->
     <section id="hero" class="hero section accent-background">
       <!-- seccion de fondo  -->
-        <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-                <div class="row gy-5 justify-content-between">
-                  <div class="col-lg  -6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                    <h2><span>Bienvenidos al  </span><span class="accent">Sauco Comedores Y hospedaje </span></h2>
-                    <p>"Tu bienestar, nuestra misión: sabor, seguridad y prioridad en cada servicio."</p>
-                    <div class="d-flex">
-                      <a href="#about" class="btn-get-started">Contacto </a>
-                      <a href="assets/media/sauco.mp4" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-                    </div>
-                  </div>
-                </div>
-      </div>
-              <!-- end section background -->
-     <!-- <div class=" position-relative" data-aos="fade-up" data-aos-delay="200">
-        <div class="container position-relative">
-          <div class="row gy-4 mt-5">
-
-            <div class="col-xl-3 col-md-6">
-              <div class="icon-box">
-                <div class="icon"><i class="bi bi-easel"></i></div>
-                <h4 class="title"><a href="" class="stretched-link">Alimentación</a></h4>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-md-6">
-              <div class="icon-box">
-                <div class="icon"><i class="bi bi-gem"></i></div>
-                <h4 class="title"><a href="" class="stretched-link">Calidad</a></h4>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-md-6">
-              <div class="icon-box">
-                <div class="icon"><i class="bi bi-geo-alt"></i></div>
-                <h4 class="title"><a href="" class="stretched-link">Salud</a></h4>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-md-6">
-              <div class="icon-box">
-                <div class="icon"><i class="bi bi-command"></i></div>
-                <h4 class="title"><a href="" class="stretched-link">Seguridad</a></h4>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>-->
-
-      
-
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Sobre Nosotros<br></h2>
-        <p>Descripcion resumen de lo que es la empresa</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3>¿Quienes Somos?</h3>
-            <img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
-            <p>Somos una empresa originada en el Caserío El Sauco ubicada en la sierra liberteña, pertenecemos al sector de servicios de concesionario de alimentos, hospedaje, lavandería, recreación y mantenimiento para nuestro socio estratégico Minera Boroo Misquichilca en la unidad Lagunas Norte, siempre demostrando un servicio de calidad con un equipo de trabajadores con vocación y compromiso.</p>
-            <p>Contamos con un equipo de profesionales altamente capacitados y comprometidos con la excelencia, que trabajan incansablemente para garantizar que cada uno de nuestros clientes reciba un servicio excepcional.</p>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
-            <div class="content ps-0 ps-lg-5">
-              <h3>Misión</h3>
-                <p>
-                Mejorar la calidad de vida de las personas, brindando y garantizando un servicio integral de alimentación,
-                hotelería, lavandería, recreación y mantenimiento, que eleven el nivel de calidad de nuestros clientes.
-
-                </p>
-              <h3>Visión</h3>
-                <p>
-                Consolidarse como una de las empresas líderes en servicios integrales brindando soluciones a nuestros clientes, 
-                convirtiéndonos en sus socios estratégicos, priorizando calidad y seguridad alimentaria.
-                </p>
-              <h3>Valores</h3>
-              <p>
-                Nuestros valores es la transparencia tanto interno como externo son:
-              </p>
-              <ul>
-                <li><i class="bi bi-check-circle-fill"></i> <span> Honestidad y confianza, compromiso.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Liderazgo y trabajo en equipo.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span> Responsabilidad y cuidado con el ambiente.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span> Dar valor agregado a nuestros colaboradores.</span></li>
-              </ul>
-              <!-- <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p> -->
-              
-              
-
-              <div class="position-relative mt-4">
-                <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt="">
-                <a href="assets/media/about.mp4" class="glightbox pulsating-play-btn"></a>
-              </div>
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-5 justify-content-between">
+          <div class="col-lg  -6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h2><span>Bienvenidos al </span><span class="accent">Sauco Comedores Y hospedaje </span></h2>
+            <p>"Tu bienestar, nuestra misión: sabor, seguridad y prioridad en cada servicio."</p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">Contacto </a>
+              <a href="assets/media/sauco.mp4" class="glightbox btn-watch-video d-flex align-items-center"><i
+                  class="bi bi-play-circle"></i><span>Watch Video</span></a>
             </div>
           </div>
         </div>
-
       </div>
-      <!-- linea del tiempo historia de la empresa --> 
-       
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Historia</h2>
-        <p>“Del corazón de la sierra liberteña nace Del Sauco, una empresa forjada con esfuerzo, vocación y compromiso, que ha crecido junto a su gente para brindar servicios de alimentación y bienestar con calidad y calidez.”</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 10
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <h3>2014</h3>
-                <h4>Inicio</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Somos una empresa originada en el Caserío El Sauco ubicada en la sierra liberteña, pertenecemos al sector de servicios de concesionario de alimentos, hospedaje, lavandería, recreación y mantenimiento para nuestro socio estratégico Minera Boroo Misquichilca en la unidad Lagunas Norte, siempre demostrando un servicio de calidad con un equipo de trabajadores con vocación y compromiso.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <h3>2014</h3>
-                <h4>Inicio</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <h3>2014</h3>
-                <h4>Inicio</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <h3>2014</h3>
-                <h4>Inicio</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->     
-      <!-- fin de contenedor de linea del tiempo  -->
-    </section><!-- /About Section -->
-
+    </section>
+    <!-- /Hero Section -->
     <!-- Clients Section -->
     <section id="clients" class="clients section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Proyectos<br></h2>
-        <p>"Conoce a los clientes pioneros que confiaron en nosotros desde el comienzo."</p>
-      </div><!-- End Section Title -->
+
       <div class="container">
 
         <div class="swiper init-swiper">
@@ -330,29 +147,20 @@
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/Boroo.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Boroo.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Boroo.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Boroo.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Boroo.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Boroo.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Boroo.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/Boroo.png" class="img-fluid" alt=""></div>
-            <!-- <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
             <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div> -->
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
           </div>
         </div>
 
       </div>
 
     </section><!-- /Clients Section -->
-
     <!-- Stats Section -->
     <section id="stats" class="stats section">
 
@@ -372,8 +180,10 @@
                 <div class="stats-item d-flex">
                   <i class="bi bi-emoji-smile flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="1600" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Clientes Satisfechos</strong> <span>Nos eligen por nuestra calidad, compromiso y resultados comprobados.</span></p>
+                    <span data-purecounter-start="0" data-purecounter-end="1600" data-purecounter-duration="1"
+                      class="purecounter"></span>
+                    <p><strong>Clientes Satisfechos</strong> <span>Nos eligen por nuestra calidad, compromiso y
+                        resultados comprobados.</span></p>
                   </div>
                 </div>
               </div><!-- End Stats Item -->
@@ -382,8 +192,10 @@
                 <div class="stats-item d-flex">
                   <i class="bi bi-journal-richtext flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Proyecto en marcha</strong> <span>Siempre hay una nueva idea tomando forma. ¡Estamos empezando algo grande!</span></p>
+                    <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1"
+                      class="purecounter"></span>
+                    <p><strong>Proyecto en marcha</strong> <span>Siempre hay una nueva idea tomando forma. ¡Estamos
+                        empezando algo grande!</span></p>
                   </div>
                 </div>
               </div><!-- End Stats Item -->
@@ -392,8 +204,10 @@
                 <div class="stats-item d-flex">
                   <i class="bi bi-headset flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong> Horas de Soporte Técnico</strong> <span>Siempre disponibles para ayudarte. Soporte eficiente y personalizado.</span></p>
+                    <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1"
+                      class="purecounter"></span>
+                    <p><strong> Horas de Soporte Técnico</strong> <span>Siempre disponibles para ayudarte. Soporte
+                        eficiente y personalizado.</span></p>
                   </div>
                 </div>
               </div><!-- End Stats Item -->
@@ -402,8 +216,10 @@
                 <div class="stats-item d-flex">
                   <i class="bi bi-people flex-shrink-0"></i>
                   <div>
-                    <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1" class="purecounter"></span>
-                    <p><strong>Hard Workers</strong> <span>Un equipo apasionado que convierte ideas en soluciones reales.</span></p>
+                    <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1"
+                      class="purecounter"></span>
+                    <p><strong>Hard Workers</strong> <span>Un equipo apasionado que convierte ideas en soluciones
+                        reales.</span></p>
                   </div>
                 </div>
               </div><!-- End Stats Item -->
@@ -437,16 +253,19 @@
       </div>
 
     </section><!-- /Call To Action Section -->
-<!-- ############################################################################################################################### -->
+    <!-- ############################################################################################################################### -->
     <!-- Services Section -->
-<!-- ############################################################################################################################### -->
+    <!-- ############################################################################################################################### -->
 
     <section id="services" class="services section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Nuestros Servicios</h2>
-        <p>En el Sauco, somos una empresa originada en el caserío El Sauco, en la sierra liberteña, dedicada a brindar servicios integrales para el sector minero. Ofrecemos atención de calidad a través de un equipo comprometido, sirviendo a nuestro socio estratégico Minera Boroo Misquichilca en su unidad Lagunas Norte. Estos son algunos de nuestros principales servicios:</p>
+        <p>En el Sauco, somos una empresa originada en el caserío El Sauco, en la sierra liberteña, dedicada a brindar
+          servicios integrales para el sector minero. Ofrecemos atención de calidad a través de un equipo comprometido,
+          sirviendo a nuestro socio estratégico Minera Boroo Misquichilca en su unidad Lagunas Norte. Estos son algunos
+          de nuestros principales servicios:</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -454,101 +273,107 @@
         <div class="row gy-4">
           <!-- alimentación corporativa -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-              <div class="position-relative h-100">
-                <div class="portafolio-content">
-                  <img src="assets/img/service/alimentacion-corporativa.jpg" class="img-fluid" alt="">
-                </div>
-                <br>
-                <div class="portfolio-info">
-                  <h3>Alimentación Corporativa</h3>
-                  <p>Ofrecemos servicios de concesión de alimentos, diseñados para satisfacer las necesidades nutricionales del personal minero con altos estándares de higiene, sabor y variedad.</p>
-                  <a href="service-details.html" class="readmore ">Leer mas ... <i class="bi bi-arrow-right"></i></a>
-                </div>
+            <div class="position-relative h-100">
+              <div class="portafolio-content">
+                <img src="assets/img/service/alimentacion-corporativa.jpg" class="img-fluid" alt="">
               </div>
+              <br>
+              <div class="portfolio-info">
+                <h3>Alimentación Corporativa</h3>
+                <p>Ofrecemos servicios de concesión de alimentos, diseñados para satisfacer las necesidades
+                  nutricionales del personal minero con altos estándares de higiene, sabor y variedad.</p>
+                <a href="service-details.html" class="readmore ">Leer mas ... <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
           </div>
-        <!-- fin alimentación corporativa -->
+          <!-- fin alimentación corporativa -->
 
-        <!--  Hospedaje Industrial -->
+          <!--  Hospedaje Industrial -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-              <div class="position-relative h-100">
-                <div class="portafolio-content">
-                  <img src="assets/img/service/referancia.jpg" class="img-fluid" alt="">
-                </div>
-                <br>
-                <div class="portfolio-info">
-                  <h3>Hospedaje Industrial</h3>
-                  <p>Contamos con infraestructura adecuada para brindar descanso cómodo, seguro y funcional al personal que labora en zonas remotas o de difícil acceso.</p>
-                  <a href="service-details.html" class="readmore">Leer mas ... <i class="bi bi-arrow-right"></i></a>
-                </div>
+            <div class="position-relative h-100">
+              <div class="portafolio-content">
+                <img src="assets/img/service/referancia.jpg" class="img-fluid" alt="">
               </div>
-          </div>
-        <!-- fin  Hospedaje Industrial -->
-
-        <!-- lavandería profesional -->
-         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-              <div class="position-relative h-100">
-                <div class="portafolio-content">
-                  <img src="assets/img/service/lavanderia_profesional.jpg" class="img-fluid" alt="">
-                </div>
-                <br>
-                <div class="portfolio-info">
-                  <h3>Lavandería Profesional</h3>
-                  <p>Contamos con infraestructura adecuada para brindar descanso cómodo, seguro y funcional al personal que labora en zonas remotas o de difícil acceso.</p>
-                  <a href="service-details.html" class="readmore">Leer mas ... <i class="bi bi-arrow-right"></i></a>
-                </div>
+              <br>
+              <div class="portfolio-info">
+                <h3>Hospedaje Industrial</h3>
+                <p>Contamos con infraestructura adecuada para brindar descanso cómodo, seguro y funcional al personal
+                  que labora en zonas remotas o de difícil acceso.</p>
+                <a href="service-details.html" class="readmore">Leer mas ... <i class="bi bi-arrow-right"></i></a>
               </div>
+            </div>
           </div>
-        <!-- fin lavandería profesional  -->
+          <!-- fin  Hospedaje Industrial -->
 
-        <!-- Recreación y Bienestar -->
+          <!-- lavandería profesional -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-              <div class="position-relative h-100">
-                <div class="portafolio-content">
-                  <img src="assets/img/service/referancia.jpg" class="img-fluid" alt="">
-                </div>
-                <br>
-                <div class="portfolio-info">
-                  <h3>Recreación y Bienestar</h3>
-                  <p>Promovemos el bienestar del trabajador con espacios y actividades de recreación, fomentando el equilibrio emocional y la integración del equipo humano.</p>
-                  <a href="service-details.html" class="readmore">Leer mas ... <i class="bi bi-arrow-right"></i></a>
-                </div>
+            <div class="position-relative h-100">
+              <div class="portafolio-content">
+                <img src="assets/img/service/lavanderia_profesional.jpg" class="img-fluid" alt="">
               </div>
+              <br>
+              <div class="portfolio-info">
+                <h3>Lavandería Profesional</h3>
+                <p>Contamos con infraestructura adecuada para brindar descanso cómodo, seguro y funcional al personal
+                  que labora en zonas remotas o de difícil acceso.</p>
+                <a href="service-details.html" class="readmore">Leer mas ... <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
           </div>
-        <!-- Fin Recreación y Bienestar -->
+          <!-- fin lavandería profesional  -->
 
-        <!-- mantenimiento general -->
+          <!-- Recreación y Bienestar -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-              <div class="position-relative h-100">
-                <div class="portafolio-content">
-                  <img src="assets/img/service/referancia.jpg" class="img-fluid" alt="">
-                </div>
-                <br>
-                <div class="portfolio-info">
-                  <h3>Mantenimiento General</h3>
-                  <p>Realizamos mantenimiento preventivo y correctivo en infraestructura e instalaciones del campamento, garantizando funcionalidad continua y seguridad operativa.</p>
-                  <a href="service-details.html" class="readmore">Leer mas ... <i class="bi bi-arrow-right"></i></a>
-                </div>
+            <div class="position-relative h-100">
+              <div class="portafolio-content">
+                <img src="assets/img/service/referancia.jpg" class="img-fluid" alt="">
               </div>
-          </div>
-        <!-- fin mantenimiento general -->
-
-        <!-- compromiso y vocación   -->
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-              <div class="position-relative h-100">
-                <div class="portafolio-content">
-                  <img src="assets/img/service/referancia.jpg" class="img-fluid" alt="">
-                </div>
-                <br>
-                <div class="portfolio-info">
-                  <h3>Compromiso y Vocación</h3>
-                  <p>Promovemos el bienestar del trabajador con espacios y actividades de recreación, fomentando el equilibrio emocional y la integración del equipo humano.</p>
-                  <a href="service-details.html" class="readmore">Leer mas ... <i class="bi bi-arrow-right"></i></a>
-                </div>
+              <br>
+              <div class="portfolio-info">
+                <h3>Recreación y Bienestar</h3>
+                <p>Promovemos el bienestar del trabajador con espacios y actividades de recreación, fomentando el
+                  equilibrio emocional y la integración del equipo humano.</p>
+                <a href="service-details.html" class="readmore">Leer mas ... <i class="bi bi-arrow-right"></i></a>
               </div>
+            </div>
           </div>
-        <!-- fin compromiso y vocación -->
+          <!-- Fin Recreación y Bienestar -->
 
-      </div>
+          <!-- mantenimiento general -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="position-relative h-100">
+              <div class="portafolio-content">
+                <img src="assets/img/service/referancia.jpg" class="img-fluid" alt="">
+              </div>
+              <br>
+              <div class="portfolio-info">
+                <h3>Mantenimiento General</h3>
+                <p>Realizamos mantenimiento preventivo y correctivo en infraestructura e instalaciones del campamento,
+                  garantizando funcionalidad continua y seguridad operativa.</p>
+                <a href="service-details.html" class="readmore">Leer mas ... <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- fin mantenimiento general -->
+
+          <!-- compromiso y vocación   -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="position-relative h-100">
+              <div class="portafolio-content">
+                <img src="assets/img/service/referancia.jpg" class="img-fluid" alt="">
+              </div>
+              <br>
+              <div class="portfolio-info">
+                <h3>Compromiso y Vocación</h3>
+                <p>Promovemos el bienestar del trabajador con espacios y actividades de recreación, fomentando el
+                  equilibrio emocional y la integración del equipo humano.</p>
+                <a href="service-details.html" class="readmore">Leer mas ... <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- fin compromiso y vocación -->
+
+        </div>
 
     </section><!-- /Services Section -->
     <!-- verificar si es necesario presentar al equipo del sauco  -->
@@ -558,7 +383,8 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Nuestro Equipo</h2>
-        <p>El Sauco Comedores esta conformado por personal altamente capacitado y profesional para poder brinar los servicios de la mas alta calidad.</p>
+        <p>El Sauco Comedores esta conformado por personal altamente capacitado y profesional para poder brinar los
+          servicios de la mas alta calidad.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -567,7 +393,9 @@
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <img src="https://thumbs.dreamstime.com/b/sirva-el-vector-plano-del-estilo-del-avatar-del-web-del-icono-de-la-cara-del-retrato-85797128.jpg" class="img-fluid" alt="">
+              <img
+                src="https://thumbs.dreamstime.com/b/sirva-el-vector-plano-del-estilo-del-avatar-del-web-del-icono-de-la-cara-del-retrato-85797128.jpg"
+                class="img-fluid" alt="">
               <h4>Nombre del profesional</h4>
               <span>Administración</span>
               <div class="social">
@@ -581,7 +409,9 @@
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
-              <img src="https://thumbs.dreamstime.com/b/sirva-el-vector-plano-del-estilo-del-avatar-del-web-del-icono-de-la-cara-del-retrato-85797128.jpg" class="img-fluid" alt="">
+              <img
+                src="https://thumbs.dreamstime.com/b/sirva-el-vector-plano-del-estilo-del-avatar-del-web-del-icono-de-la-cara-del-retrato-85797128.jpg"
+                class="img-fluid" alt="">
               <h4>Nombre del Profesional</h4>
               <span>Supervisor SSOMA</span>
               <div class="social">
@@ -638,7 +468,8 @@
             <div class="content px-xl-5">
               <h3><span>Preguntas </span><strong>Frecuentes</strong></h3>
               <p>
-                aqui se ingresaran las preguntas frecuanetes de los clientes las mas comunes.... aun queda detallar con el cliente tipo de preguntas seran.
+                aqui se ingresaran las preguntas frecuanetes de los clientes las mas comunes.... aun queda detallar con
+                el cliente tipo de preguntas seran.
               </p>
             </div>
           </div>
@@ -647,9 +478,12 @@
 
             <div class="faq-container">
               <div class="faq-item faq-active">
-                <h3><span class="num">1.</span> <span>Qué servicios ofrece Sauco Comedores y Hospedaje S.A.C.?</span></h3>
+                <h3><span class="num">1.</span> <span>Qué servicios ofrece Sauco Comedores y Hospedaje S.A.C.?</span>
+                </h3>
                 <div class="faq-content">
-                  <p>Brindamos servicios de alimentación masiva para empresas, campamentos, instituciones y operaciones corporativas, incluyendo desayunos, almuerzos, cenas, refrigerios y atención integral de comedores. También ofrecemos servicios de hospedaje y bienestar para personal operativo y administrativo.</p>
+                  <p>Brindamos servicios de alimentación masiva para empresas, campamentos, instituciones y operaciones
+                    corporativas, incluyendo desayunos, almuerzos, cenas, refrigerios y atención integral de comedores.
+                    También ofrecemos servicios de hospedaje y bienestar para personal operativo y administrativo.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -657,31 +491,42 @@
               <div class="faq-item">
                 <h3><span class="num">2.</span> <span>¿Qué tipo de empresas atienden?</span></h3>
                 <div class="faq-content">
-                  <p>Atendemos empresas del sector minero, construcción, industria, transporte, educación y otras organizaciones que requieren soluciones de alimentación corporativa y atención de personal en operaciones de gran escala.</p>
+                  <p>Atendemos empresas del sector minero, construcción, industria, transporte, educación y otras
+                    organizaciones que requieren soluciones de alimentación corporativa y atención de personal en
+                    operaciones de gran escala.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span class="num">3.</span> <span>¿Los menús son personalizados según las necesidades del cliente?</span></h3>
+                <h3><span class="num">3.</span> <span>¿Los menús son personalizados según las necesidades del
+                    cliente?</span></h3>
                 <div class="faq-content">
-                  <p>Sí. Elaboramos menús balanceados y personalizados según los requerimientos nutricionales, operativos y presupuestales de cada empresa, manteniendo estándares de calidad e inocuidad alimentaria.</p>
+                  <p>Sí. Elaboramos menús balanceados y personalizados según los requerimientos nutricionales,
+                    operativos y presupuestales de cada empresa, manteniendo estándares de calidad e inocuidad
+                    alimentaria.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span class="num">4.</span> <span>¿Qué medidas de higiene y seguridad alimentaria manejan?</span></h3>
+                <h3><span class="num">4.</span> <span>¿Qué medidas de higiene y seguridad alimentaria manejan?</span>
+                </h3>
                 <div class="faq-content">
-                  <p>Aplicamos protocolos de higiene, manipulación segura de alimentos y control de calidad en todos nuestros procesos, garantizando un servicio confiable y alineado con las normas sanitarias vigentes.</p>
+                  <p>Aplicamos protocolos de higiene, manipulación segura de alimentos y control de calidad en todos
+                    nuestros procesos, garantizando un servicio confiable y alineado con las normas sanitarias vigentes.
+                  </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3><span class="num">5.</span> <span>¿Cómo puedo solicitar una cotización o propuesta de servicio?</span></h3>
+                <h3><span class="num">5.</span> <span>¿Cómo puedo solicitar una cotización o propuesta de
+                    servicio?</span></h3>
                 <div class="faq-content">
-                  <p>Puede contactarnos a través de nuestro formulario web, correo corporativo o canales de atención para recibir una propuesta personalizada según la cantidad de personal, ubicación y tipo de servicio requerido.</p>
+                  <p>Puede contactarnos a través de nuestro formulario web, correo corporativo o canales de atención
+                    para recibir una propuesta personalizada según la cantidad de personal, ubicación y tipo de servicio
+                    requerido.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -800,7 +645,8 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contacto</h2>
-        <p>Comunicate con nosotros llenando el fomulario para obtener una cotizacion detallada de los servicios brindados</p>
+        <p>Comunicate con nosotros llenando el fomulario para obtener una cotizacion detallada de los servicios
+          brindados</p>
 
       </div><!-- End Section Title -->
 
@@ -936,9 +782,10 @@
 
       </div>
     </div>
-<!-- nombre de la startup desarrolladora -->
+    <!-- nombre de la startup desarrolladora -->
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">AsCris Corp</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">AsCris Corp</strong> <span>All Rights Reserved</span>
+      </p>
       <div class="credits">
         Designed by <a href="#">AsCris Corp</a> Distributed by <a href="#">AsCris Corp</a>
       </div>
@@ -947,7 +794,8 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
